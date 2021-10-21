@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "634a057d-4e0f-45f4-a834-9ea2ee48ef36",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4001/api/auth",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "AdminTokenheader",
+						"value": "XXXXXXXXXXx",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjE3MDA3MTMzNTk4NzhiNDNlYWVhMzYwIiwiQVBJQ2xpZW50SUQiOiI2NjU2NXNzODk2IiwiaWF0IjoxNjM0NzMxOTIzLCJleHAiOjE2MzQ3MzkxMjN9.wtP91Anno9QExLla99ee0FAZslM6RMlcQM7cVUUGim4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"apiClientID\" : \"66565ss896\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"auth"
+					],
+					"query": [
+						{
+							"key": "body_md5",
+							"value": "2c99321eeba901356c4c7998da9be9e0",
+							"disabled": true
+						},
+						{
+							"key": "auth_version",
+							"value": "1.0",
+							"disabled": true
+						},
+						{
+							"key": "auth_key",
+							"value": "ad224c2ce91e2a2179cb",
+							"disabled": true
+						},
+						{
+							"key": "auth_timestamp",
+							"value": "1630427399",
+							"disabled": true
+						},
+						{
+							"key": "auth_signature",
+							"value": "898d5e36a793d54d01d684fde350e1cd47996aad7eae4c09a232379773bff0b6",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "event",
+							"disabled": true
+						},
+						{
+							"key": "data",
+							"value": "{\"sender\":{\"id\":\"0217361d-d1e9-4159-b221-63a2a36b5c78\",\"name\":\"You\"},\"content\":\"Hello Ahmed\",\"time\":\"18:1:10\"}",
+							"disabled": true
+						},
+						{
+							"key": "channel",
+							"value": "omar-chatApp-343",
+							"disabled": true
+						},
+						{
+							"key": "socket_id",
+							"value": "1324124699628",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4001/api/auth/login",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "AdminTokenheader",
+						"value": "XXXXXXXXXXx",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"apiClientID\" : \"66565ss896\", \r\n\"password\" : \"123456789\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "body_md5",
+							"value": "2c99321eeba901356c4c7998da9be9e0",
+							"disabled": true
+						},
+						{
+							"key": "auth_version",
+							"value": "1.0",
+							"disabled": true
+						},
+						{
+							"key": "auth_key",
+							"value": "ad224c2ce91e2a2179cb",
+							"disabled": true
+						},
+						{
+							"key": "auth_timestamp",
+							"value": "1630427399",
+							"disabled": true
+						},
+						{
+							"key": "auth_signature",
+							"value": "898d5e36a793d54d01d684fde350e1cd47996aad7eae4c09a232379773bff0b6",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "event",
+							"disabled": true
+						},
+						{
+							"key": "data",
+							"value": "{\"sender\":{\"id\":\"0217361d-d1e9-4159-b221-63a2a36b5c78\",\"name\":\"You\"},\"content\":\"Hello Ahmed\",\"time\":\"18:1:10\"}",
+							"disabled": true
+						},
+						{
+							"key": "channel",
+							"value": "omar-chatApp-343",
+							"disabled": true
+						},
+						{
+							"key": "socket_id",
+							"value": "1324124699628",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4001/api/auth/register",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "mflmkKnfiueasF04m2900234ms,md8902324ssmsd@#$5slkdpsdk5fdfswq][./tsc]",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "AdminToken",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "AdminTokenheader",
+						"value": "XXXXXXXXXXx",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"apiClientID\" : \"66565ss896\", \r\n\"owner\" : \"Omar Abdo\", \r\n\"email\" : \"Omar.Abdo@gmail.com\" , \r\n\"password\" : \"123456789\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					],
+					"query": [
+						{
+							"key": "body_md5",
+							"value": "2c99321eeba901356c4c7998da9be9e0",
+							"disabled": true
+						},
+						{
+							"key": "auth_version",
+							"value": "1.0",
+							"disabled": true
+						},
+						{
+							"key": "auth_key",
+							"value": "ad224c2ce91e2a2179cb",
+							"disabled": true
+						},
+						{
+							"key": "auth_timestamp",
+							"value": "1630427399",
+							"disabled": true
+						},
+						{
+							"key": "auth_signature",
+							"value": "898d5e36a793d54d01d684fde350e1cd47996aad7eae4c09a232379773bff0b6",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "event",
+							"disabled": true
+						},
+						{
+							"key": "data",
+							"value": "{\"sender\":{\"id\":\"0217361d-d1e9-4159-b221-63a2a36b5c78\",\"name\":\"You\"},\"content\":\"Hello Ahmed\",\"time\":\"18:1:10\"}",
+							"disabled": true
+						},
+						{
+							"key": "channel",
+							"value": "omar-chatApp-343",
+							"disabled": true
+						},
+						{
+							"key": "socket_id",
+							"value": "1324124699628",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

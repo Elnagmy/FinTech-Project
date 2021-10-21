@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "ad9360da-418d-40ca-8815-f47ec150b6b1",
+		"name": "Payment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:31000/api/pay",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlDbGllbnRfb2JqZWN0X2lkIjoiNjE3MDA3MTMzNTk4NzhiNDNlYWVhMzYwIiwiQVBJQ2xpZW50SUQiOiI2NjU2NXNzODk2IiwiaWF0IjoxNjM0NzQ1MDU1LCJleHAiOjE2MzQ3NTIyNTV9.ZOCgB8PER1r1Qp7w7BXP27qNycPE7shxRRFbQ69HnK4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Transacation\" : {\r\n        \"card\":{\r\n            \"CardHolderName\": \"Omar Adel Abdel Wehab\",\r\n            \"CardNumber\":\"425325254523654\",\r\n            \"ExpiryDate\" : \"25/21\",\r\n            \"cvc\" : \"757\"\r\n        },\r\n        \"Marchant\" : {\r\n            \"Marchant_id\":\"532233656\",\r\n            \"Marchant_Name\":\" Jumia\",\r\n            \"Bank_Name\" :\"HSBC\",\r\n            \"Bank_address\":\" 306 cornsh el maadi\",\r\n            \"Account_Number\":\"kkdkkkdkdk\",\r\n            \"IBAN\":\"EG7022555025255455555\"\r\n\r\n        },\r\n        \"Amount\" : \"200\",\r\n        \"Narrative\": \" Buying a new shoes from Jumia \"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:31000/api/pay",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "31000",
+					"path": [
+						"api",
+						"pay"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:31000/api/transaction/getTransactionByMarchant/6170e29dd2a1e257a78ebeb6",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlDbGllbnRfb2JqZWN0X2lkIjoiNjE3MDA3MTMzNTk4NzhiNDNlYWVhMzYwIiwiQVBJQ2xpZW50SUQiOiI2NjU2NXNzODk2IiwiaWF0IjoxNjM0ODAxODUwLCJleHAiOjE2MzQ4MDkwNTB9.fQBy19uXMGGmcAf6i7ZiwJ8lJ1GZgxlovtYk0DGEEk0",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:31000/api/transaction/getTransactionByMarchant/6170e29dd2a1e257a78ebeb6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "31000",
+					"path": [
+						"api",
+						"transaction",
+						"getTransactionByMarchant",
+						"6170e29dd2a1e257a78ebeb6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
