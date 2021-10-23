@@ -40,11 +40,12 @@ Application End Point architecure :
 ![alt text](https://github.com/Elnagmy/FinTech-Project/blob/main/Project%20Digrams/Payment-gateway.png)
  
 <h3>Referances :<h3> 
-Github Repo : https://github.com/Elnagmy/FinTech-Project
-Heroku End Points : 
-1. Payment gateway auth Service :
+ <h4> Github Repo : </h4> https://github.com/Elnagmy/FinTech-Project
+ 
+ <h4> Heroku End Points : </h4>
+ <h5> 1. Payment gateway auth Service : </h5>
 https://payment-gateway-auth-service.herokuapp.com/
-2. Payment gateway Bank Service :
+<h5> 2. Payment gateway Bank Service :</h5>
 https://payment-gateway-bank-service.herokuapp.com/api/pay
-3. Merchant Service
+<h5> 3. Merchant Service :</h5>
  
