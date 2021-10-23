@@ -36,8 +36,9 @@ This service is exposed to the merchants to use, it provides the below end point
 This service is responsible to provide the integration between banks and to provide all transaction done by  merchant if,  the service has two endpoints :
 ⦁	Pay : this endpoint is exposed to the merchant service to provide the cc information and the amount we need to pay and the merchant. The service then get the issuing bank from the card number, then it connects to the bank and do the payment. Bank connectivity information are stored in the database.
 ⦁	 getTransactionByMerchantId : this endpoint retrieve all transaction for specific merchant and provide to them in order to do settlements
-Application End Point architecure :
-![alt text](https://github.com/Elnagmy/FinTech-Project/blob/main/Project%20Digrams/Payment-gateway.png)
+
+<h3>Application End Point architecure :</h3>
+ <img src="https://github.com/Elnagmy/FinTech-Project/blob/main/Project%20Digrams/Payment-gateway.png" alt="end point digram">
  
 <h3>Referances :<h3> 
  <h4> Github Repo : </h4> https://github.com/Elnagmy/FinTech-Project
