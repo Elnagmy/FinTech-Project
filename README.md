@@ -1,11 +1,15 @@
-# FinTech-Project
-Team 4 - Payment Gateway
-Team Memebers :-
-1.	Omar Abdo
-2.	Mohamed Saber
-3.	Omar Adel
-4.	Ola Diaa
-5.	Ahmed ElNabawy 
+# FinTech-Project (Team 4 - Payment Gateway)
+
+<h3>Team Memebers :-</h3>
+
+<ol type="1">
+  <li>Omar Abdo</li>
+  <li>Mohamed Saber</li>
+  <li>Omar Adel</li>
+  <li>Ola Diaa</li>
+  <li>Ahmed ElNabawy </li>
+</ol>
+ 
 
 <h3>Overview</h3>
 We designed the payment gateway application with microservice architecture, the system consist from 3 main microservices, the services communicate together with a REST full API, and  authenticated with JWT tokens, each service can scale up or down independently and can be deployed independently as long as the changes are not in the API contract , In order to help the merchants to avoid PCI regulation, we will offer them to redirect the customers checkout request to us and we will handle the payment end to end for them, they don't have to store any payment information or card information.
