@@ -1,12 +1,16 @@
 import mongoose from "mongoose";
 import log from "../logger";
 import * as dotenv from 'dotenv';
+import { SecretCrypto } from "../util/SecretCrypto.util"
 
 dotenv.config();
 
-const MONGO_URI = process.env.MONGO_URI ?? '';
+
 
 export default async () => {
+    const secretCrypto = new SecretCrypto();
+    const MONGO_URI = secretCrypto.decyptSecret(process.env.MONGO_URI ?? '');
+    log.info("traying to connect to database" + MONGO_URI);
     return mongoose.connect(MONGO_URI).then(() => {
         log.info("Database connected");
     }).catch((error) => {

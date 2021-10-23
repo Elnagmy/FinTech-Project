@@ -15,7 +15,7 @@ export class ApiClinetMiddelware {
             if (!token) {
                 throw new Error("A token is required for authentication");
             }
-            log.info(token);
+
             try {
                 log.info("decoding token");
                 const decoded = jwt.verify(token, process.env.API_KEY);

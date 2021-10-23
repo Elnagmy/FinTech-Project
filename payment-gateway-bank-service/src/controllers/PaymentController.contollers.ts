@@ -11,10 +11,9 @@ export class PaymentController {
     async pay(request: Request, response: Response) {
         try {
             let transaction = fromTransactionObject(request);
-            log.info(transaction);
+
             try {
                 let bank = await bankServices.getBankFromCardNumber(transaction.card.cardNumber);
-                console.log(bank);
                 let status = await bankServices.connectToBank(transaction, bank);
             } catch (error: any) {
                 log.error(error)

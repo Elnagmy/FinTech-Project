@@ -20,7 +20,7 @@ export class ApiClientVaildator {
 
         } catch (error: any) {
             log.error(error);
-            response.status(401).json({ isucess: false, message: error.message });
+            response.status(401).json({ isucess: false, message: "Token Validation faild please use a valid token " });
         }
 
 
