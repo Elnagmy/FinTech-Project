@@ -62,6 +62,9 @@ this endpoint is exposed to the merchant service to provide the cc information a
  
 <h3>Referances :<h3> 
  <h4> Github Repo : </h4> https://github.com/Elnagmy/FinTech-Project
+  <br>
+  Front End Merchant Service : https://github.com/civilcoder55/p-gate
+  
  
  <h4> Heroku End Points : </h4>
  <h5> 1. Payment gateway auth Service : </h5>
@@ -69,4 +72,6 @@ https://payment-gateway-auth-service.herokuapp.com/
 <h5> 2. Payment gateway Bank Service :</h5>
 https://payment-gateway-bank-service.herokuapp.com/api/pay
 <h5> 3. Merchant Service :</h5>
- 
+ Backend Merchant Service : https://p-gate-backend.herokuapp.com/
+  <br>
+ Front End Merchant Service : https://p-gate.herokuapp.com/
